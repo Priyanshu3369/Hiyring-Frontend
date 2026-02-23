@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+New&display=swap');
+
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════
+   THEME VARIABLES (Dark default)
+   ═══════════════════════════════════════ */
+:root[data-theme="dark"],
+:root {
+  --bg-main: #111111;
+  --bg-card: #1C1C1C;
+  --bg-secondary: #0F0F0F;
+  --accent: #9CA3AF;
+  --text-primary: #FFFFFF;
+  --text-muted: #9CA3AF;
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-light: rgba(255, 255, 255, 0.08);
+  --bg-hover: rgba(255, 255, 255, 0.12);
+  --bg-hover-dark: rgba(255, 255, 255, 0.2);
+
+  /* Growth card — LIGHT in dark mode (inverted hero card) */
+  --growth-bg:           #f7f7f7;          /* near-white background    */
+  --growth-border:       #e0e0e0;          /* subtle light border      */
+  --growth-shadow:       0 32px 80px rgba(0,0,0,0.5), 0 8px 24px rgba(0,0,0,0.3);
+  --growth-text:         #111111;          /* near-black primary text  */
+  --growth-muted:        rgba(17,17,17,0.55);  /* muted on light bg    */
+  --growth-check:        #16a34a;          /* deeper green tick        */
+  --growth-badge-bg:     #ebebeb;          /* badge strip              */
+  --growth-badge-text:   rgba(17,17,17,0.5);
+  --growth-btn-bg:       #111111;          /* dark button on light card */
+  --growth-btn-text:     #f7f7f7;          /* light label              */
+
+}
+
+:root[data-theme="light"] {
+  --bg-main: #FFFFFF;
+  --bg-card: #F9F9F9;
+  --bg-secondary: #F0F0F0;
+  --accent: #0F0F0F;
+  --text-primary: #111111;
+  --text-muted: #666666;
+  --border-color: rgba(0, 0, 0, 0.06);
+  --border-light: rgba(0, 0, 0, 0.08);
+  --bg-hover: rgba(0, 0, 0, 0.04);
+  --bg-hover-dark: rgba(0, 0, 0, 0.08);
+
+  /* Growth card — DARK in light mode (inverted hero card) */
+  --growth-bg:           #111111;          /* near-black background   */
+  --growth-border:       #2a2a2a;          /* subtle dark border       */
+  --growth-shadow:       0 32px 80px rgba(0,0,0,0.35), 0 8px 24px rgba(0,0,0,0.2);
+  --growth-text:         #f5f5f5;          /* off-white primary text   */
+  --growth-muted:        rgba(245,245,245,0.55); /* muted on dark bg   */
+  --growth-check:        #86efac;          /* soft green tick          */
+  --growth-badge-bg:     #222222;          /* badge strip              */
+  --growth-badge-text:   rgba(245,245,245,0.5);
+  --growth-btn-bg:       #f5f5f5;          /* light button on dark card */
+  --growth-btn-text:     #111111;          /* dark label */
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
