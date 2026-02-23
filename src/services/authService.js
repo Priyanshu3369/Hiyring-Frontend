@@ -10,7 +10,6 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || "http://localhost:5002/api",
   headers: { "Content-Type": "application/json" },
 });
-
 // ── Request interceptor ────────────────────────────────────────────────────
 // Automatically attaches the JWT to every outgoing request if one is stored.
 // This means you never have to manually add the Authorization header in components.
