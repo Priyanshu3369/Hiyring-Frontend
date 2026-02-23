@@ -2,7 +2,6 @@
 // Single source of truth for all auth-related HTTP calls.
 // Components and pages import from here — never call fetch/axios directly.
 // This makes it trivial to swap the base URL or add request interceptors later.
-
 import axios from "axios";
 
 // Axios instance pre-configured with base URL and default headers
